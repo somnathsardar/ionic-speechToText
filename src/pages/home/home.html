@@ -1,0 +1,19 @@
+<ion-content padding [style.background-color]="bgcolor">
+
+  <ion-card no-margin>
+    <ion-card-header>
+      <h2 style="color: red"><sup>**</sup>Tap the button bellow and say a color<sup>**</sup></h2><br>
+      Your choosen color(s)<hr>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let match of matches">{{match}}</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer padding>
+  <button full ion-button (click)="start()">Say a color</button>
+</ion-footer>
